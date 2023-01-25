@@ -18,7 +18,7 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		int arr[] = {0, 1, 2, 6, 4, 5, 8, 7, 10};
+		int arr[] = {0, 1, 2, 4, 5, 8, 7, 10};
 		int n = arr.length;
 		System.out.println("First Missing Element is => " + getFirstMissing(arr, 0, n - 1));
 	}
