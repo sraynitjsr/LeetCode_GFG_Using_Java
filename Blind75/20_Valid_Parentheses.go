@@ -25,7 +25,7 @@ func main() {
 		data: []string{},
 	}
 
-	expression := "]"
+	expression := "[({})]"
 
 	var flag int = 1
 
