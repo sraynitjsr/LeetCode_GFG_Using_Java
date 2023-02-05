@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Main {
+class One_Frequency_of_Elements_in_Array {
 	static void countFreq(int arr[], int n)
 	{
 		Map<Integer, Integer> mp = new HashMap<>();
@@ -20,8 +20,9 @@ class Main {
 		}
 	}
 
-	public static void main(String[] args)
+	public static void start()
 	{
+		System.out.println("\nInside First Module");
 		int arr[] = {10, 20, 40, 10, 50, 20, 30, 50, 20, 30};
 		int n = arr.length;
 		countFreq(arr, n);

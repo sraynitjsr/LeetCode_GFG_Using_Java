@@ -1,4 +1,4 @@
-public class Main {
+class Three_Dutch_National_Flag_Problem {
     public static void customSort(int arr[], int size) {
         int countZero = 0;
         int countOne = 0;
@@ -35,7 +35,8 @@ public class Main {
             System.out.print(arr[i] + " ");
         }
     }
-    public static void main(String args[]) {
+    public static void start() {
+        System.out.println("\nInside Third Module");
         int arr[] = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
         int n = arr.length;
         customSort(arr, n);

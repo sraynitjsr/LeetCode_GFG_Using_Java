@@ -1,7 +1,6 @@
-import java.io.*;
 import java.util.*;
 
-class MyPairSum {
+class Six_Pair_of_Given_Sum {
 	static void display(int arr[], int sum)
 	{
 		HashSet<Integer> s = new HashSet<Integer>();
@@ -16,11 +15,11 @@ class MyPairSum {
 		System.out.println("No");
 	}
 
-	public static void main(String[] args)
+	public static void start()
 	{
+		System.out.println("\nInside Sixth Module");
 		int A[] = { 1, 4, 5, 2, 3 };
 		display(A, 5);
 		display(A, 10);
 	}
 }
-

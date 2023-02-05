@@ -1,6 +1,4 @@
-import java.util.*;
-
-public class Main {
+class Nine_Missing_Number {
 
 	public static int findMissingNumber(int[] nums, int size)
 	{
@@ -10,8 +8,9 @@ public class Main {
 		return sum;
 	}
 
-	public static void main(String[] args)
+	public static void start()
 	{
+		System.out.println("\nInside Ninth Module");
 		int[] arr = { 1, 2, 4, 5, 6, 7, 8 };
 		System.out.println(findMissingNumber(arr, arr.length));
 	}

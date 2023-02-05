@@ -1,4 +1,4 @@
-public class MyFibonacci_Using_DP {
+class Eight_MyFibonacci_Using_DP {
     public static int fib(int n) {
 	    int i, f[] = new int[n+2];
 	    f[0] = 0;
@@ -8,7 +8,8 @@ public class MyFibonacci_Using_DP {
 	    }
 	    return f[n];
 	}
-	public static void main (String args[]) {
+	public static void start() {
+		System.out.println("\nInside Eighth Module");
 		System.out.println(fib(7));
 	}
 }

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+class Seven_Number_of_Subarray_with_Given_Sum {
 
 	static int findSubarraySum(int arr[], int n, int sum)
 	{
@@ -25,9 +25,9 @@ public class Main {
 		return res;
 	}
 
-	public static void main(String[] args)
+	public static void start()
 	{
-
+		System.out.println("\nInside Seventh Module");
 		int arr[] = { 1, 2, 3, 5, 4 };
 		int sum = 5;
 		int n = arr.length;

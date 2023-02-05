@@ -22,8 +22,9 @@ class MeetingComparator implements Comparator<Meeting> {
     }
 }
 
-public class Main {
-    public static void main(String[] args) {
+public class Ten_Meeting_Room_Problem {
+    public static void start() {
+        System.out.println("\nInside Tenth Module");
         ArrayList<Integer> startTimes = new ArrayList<>(Arrays.asList(1, 3, 0, 5, 8, 5));
         ArrayList<Integer> endTimes = new ArrayList<>(Arrays.asList(2, 4, 6, 7, 9, 9));
         

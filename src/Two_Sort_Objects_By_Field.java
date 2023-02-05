@@ -24,8 +24,9 @@ class ComparatorImpl implements Comparator<Student> {
     }
 }
 
-public class MyCustomSort {
-    public static void main(String[] args) {
+public class Two_Sort_Objects_By_Field {
+    public static void start() {
+        System.out.println("\nInside Tength Module");
         Student s1 = new Student(10, "A");
         Student s3 = new Student(30, "C");
         Student s2 = new Student(20, "B");

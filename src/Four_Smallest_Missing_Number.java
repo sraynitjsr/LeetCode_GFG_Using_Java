@@ -1,4 +1,4 @@
-public class Main
+class Four_Smallest_Missing_Number
 {
 	public static int getFirstMissing(int array[], int start, int end)
 	{
@@ -16,8 +16,8 @@ public class Main
 		return getFirstMissing(array, start, mid);
 	}
 
-	public static void main(String[] args)
-	{
+	public static void start() {
+		System.out.println("\nInside Fouth Module");
 		int arr[] = {0, 1, 2, 4, 5, 8, 7, 10};
 		int n = arr.length;
 		System.out.println("First Missing Element is => " + getFirstMissing(arr, 0, n - 1));

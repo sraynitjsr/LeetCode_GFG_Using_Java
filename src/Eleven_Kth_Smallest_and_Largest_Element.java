@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+class Eleven_Kth_Smallest_and_Largest_Element {
 
     public static void kLargest(int arr[], int k) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
@@ -24,7 +24,8 @@ public class Main {
         System.out.printf("%d-th Smallest Element is => %d\n", k, pqReversed.peek());
     }
 
-    public static void main(String[] args) {
+    public static void start() {
+        System.out.println("\nInside Eleventh Module");
         int myArray[] = {2, 1, 3, 7, 4, 5, 8, 6};
         int k = 3;
         kLargest(myArray, k);

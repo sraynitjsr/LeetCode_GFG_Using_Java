@@ -1,5 +1,5 @@
 import java.util.regex.*;
-public class Main
+class Five_Remove_Characters_From_String
 {
 	public static String removingUpperCaseCharacters(String str)
 	{
@@ -37,8 +37,9 @@ public class Main
 		Matcher matcher = pattern.matcher(str);
 		return matcher.replaceAll("");
 	}
-	public static void main(String[] args)
-	{
+	public static void start() {
+		System.out.println("\nInside Fifth Module");
+		
 		String str = "Ab#45ER%6tg5$";
 
 		System.out.println("After Removing Uppercase Characters => " + removingUpperCaseCharacters(str));
