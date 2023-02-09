@@ -1,20 +1,28 @@
 import java.util.*;
 
 public class Twelve_Coin_Change {
-	static long calculate(int coins[], int n, int sum) {
-		long[] data = new long[sum + 1];
-		Arrays.fill(data, 0);
-		data[0] = 1;
-		for (int i = 0; i < n; i++){
-            for (int j = coins[i]; j <= sum; j++) {
-                data[j] += data[j - coins[i]];
-            }
-        }
-		return data[sum];
-	}
-
+    static int coinChange(int[] a, int v, int n, int[][] dp) {
+        if (v == 0)
+            return dp[n][v] = 1;
+        if (n == 0)
+            return 0;
+        if (dp[n][v] != -1)
+            return dp[n][v];
+        if (a[n - 1] <= v) {
+            return dp[n][v] = coinChange(a, v - a[n - 1], n, dp) + coinChange(a, v, n - 1, dp);
+        } else{
+			return dp[n][v] = coinChange(a, v, n - 1, dp);
+		}            
+    }
 	public static void start() {
-		int coins[] = {2, 1, 3};
-		System.out.println("Possible Ways => " + calculate(coins, coins.length, 4));
+		int n, v;
+		n = 3;
+		v = 4;
+		int[] a = { 1, 2, 3 };
+		int[][] dp = new int[n + 1][v + 1];
+		for (int[] row : dp)
+		Arrays.fill(row, -1);
+		int res = coinChange(a, v, n, dp);
+		System.out.println("Possible Ways => " + res);
 	}
 }
