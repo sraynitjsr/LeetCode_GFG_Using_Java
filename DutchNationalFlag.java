@@ -3,11 +3,11 @@ public class DutchNationalFlag {
         System.out.println("Dutch National Flag Problem");
 
         int myArray[] = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
-        System.out.print("Input Array is => ");
+        System.out.print("Input  Array is => ");
         for (int i = 0; i < myArray.length; i++) {
             System.out.print(myArray[i] + " ");
         }
-        System.out.println("\nOutput Array is");
+        System.out.print("\nOutput Array is => ");
 
         for (int i = 0; i < myArray.length; i++) {
             if (myArray[i] == 0) {
