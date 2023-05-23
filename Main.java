@@ -4,6 +4,7 @@ class Main {
         DutchNationalFlag.start();
         NthHighestElement.start();
         MaximumMeetingInOneRoom.start();
-        TwoArrayUnionIntersection.start();     
+        TwoArrayUnionIntersection.start();
+        CoinChangeProblem.start();
     }
 }
