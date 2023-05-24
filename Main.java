@@ -6,5 +6,6 @@ class Main {
         MaximumMeetingInOneRoom.start();
         TwoArrayUnionIntersection.start();
         CoinChangeProblem.start();
+        MissingNumber.start();
     }
 }
