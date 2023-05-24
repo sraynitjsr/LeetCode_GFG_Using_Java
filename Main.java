@@ -7,5 +7,6 @@ class Main {
         TwoArrayUnionIntersection.start();
         CoinChangeProblem.start();
         MissingNumber.start();
+        BinaryTreeHeight.start();
     }
 }
