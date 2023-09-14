@@ -22,6 +22,7 @@ public class KMostFrequentElements {
 	}
   
 	public static void start() {
+		System.out.println("Inside KMostFrequentElements");
 		int arr[] = { 3, 1, 4, 4, 5, 2, 6, 1, 5, 6, 6, 1 };
 		int N = arr.length;
 		int K = 3;
