@@ -8,5 +8,6 @@ class Main {
         CoinChangeProblem.start();
         MissingNumber.start();
         BinaryTreeHeight.start();
+        SortArrayAfterSquaring.start();
     }
 }
