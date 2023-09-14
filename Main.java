@@ -9,5 +9,6 @@ class Main {
         MissingNumber.start();
         BinaryTreeHeight.start();
         SortArrayAfterSquaring.start();
+        KMostFrequentElements.start();
     }
 }
