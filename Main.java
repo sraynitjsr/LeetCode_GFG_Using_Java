@@ -10,5 +10,6 @@ class Main {
         BinaryTreeHeight.start();
         SortArrayAfterSquaring.start();
         KMostFrequentElements.start();
+        NoOfIslands.start();
     }
 }
