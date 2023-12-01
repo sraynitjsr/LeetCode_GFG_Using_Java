@@ -11,5 +11,6 @@ class Main {
         SortArrayAfterSquaring.start();
         KMostFrequentElements.start();
         NoOfIslands.start();
+        MoveZeros.start();
     }
 }
