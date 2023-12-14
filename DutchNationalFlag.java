@@ -1,29 +1,36 @@
 public class DutchNationalFlag {
-    public static void start() {
-        System.out.println("Dutch National Flag Problem");
+    public static void sortColors(int[] nums) {
+        int low = 0;
+        int high = nums.length - 1;
+        int current = 0;
 
-        int myArray[] = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
-        System.out.print("Input  Array is => ");
-        for (int i = 0; i < myArray.length; i++) {
-            System.out.print(myArray[i] + " ");
+        while (current <= high) {
+            if (nums[current] == 0) {
+                swap(nums, low, current);
+                low++;
+                current++;
+            } else if (nums[current] == 2) {
+                swap(nums, current, high);
+                high--;
+            } else {
+                current++;
+            }
         }
-        System.out.print("\nOutput Array is => ");
+    }
 
-        for (int i = 0; i < myArray.length; i++) {
-            if (myArray[i] == 0) {
-                System.out.print("0 ");
-            }
+    private static void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {2, 0, 2, 1, 1, 0};
+        sortColors(nums);
+
+        System.out.print("Sorted Colors: ");
+        for (int num : nums) {
+            System.out.print(num + " ");
         }
-        for (int i = 0; i < myArray.length; i++) {
-            if (myArray[i] == 1) {
-                System.out.print("1 ");
-            }
-        }
-        for (int i = 0; i < myArray.length; i++) {
-            if (myArray[i] == 2) {
-                System.out.print("2 ");
-            }
-        }
-        System.out.println("");
     }
 }
