@@ -12,5 +12,6 @@ class Main {
         KMostFrequentElements.start();
         NoOfIslands.start();
         MoveZeros.start();
+        TreeHeight.start();
     }
 }
