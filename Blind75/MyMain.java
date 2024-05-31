@@ -3,5 +3,6 @@ public class MyMain {
         MyTwoSum.twoSum();
         MyStockBuySell.stockBuySell();
         MyContainsDuplicate.containsDuplicate();
+        ProductArray.productArray();
     }
 }
