@@ -4,5 +4,6 @@ public class MyMain {
         MyStockBuySell.stockBuySell();
         MyContainsDuplicate.containsDuplicate();
         ProductArray.productArray();
+        LongestConsecutiveSequence.longestConsecutiveSequence();
     }
 }
