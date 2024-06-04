@@ -1,30 +1,35 @@
-import java.util.HashSet;
+import java.util.PriorityQueue;
 
 public class LongestConsecutiveSequence {
     
     public static int longestConsecutive(int[] nums) {
-        HashSet<Integer> numSet = new HashSet<>();
-        int longestStreak = 0;
-
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
         for (int num : nums) {
-            numSet.add(num);
+            pq.offer(num);
         }
 
-        for (int num : numSet) {
-            if (!numSet.contains(num - 1)) {
-                int currentNum = num;
-                int currentStreak = 1;
+        int longestStreak = 1;
+        int currentStreak = 1;
+        int prevNum = pq.poll();
 
-                while (numSet.contains(currentNum + 1)) {
-                    currentNum++;
-                    currentStreak++;
-                }
+        while (!pq.isEmpty()) {
+            int num = pq.poll();
 
+            if (num == prevNum + 1) {
+                currentStreak++;
+            } else if (num != prevNum) {
                 longestStreak = Math.max(longestStreak, currentStreak);
+                currentStreak = 1;
             }
+
+            prevNum = num;
         }
 
-        return longestStreak;
+        return Math.max(longestStreak, currentStreak);
     }
 
     public static void longestConsecutiveSequence() {
