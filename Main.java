@@ -13,5 +13,6 @@ class Main {
         NoOfIslands.start();
         MoveZeros.start();
         TreeHeight.start();
+        MaxRodLength.start();
     }
 }
