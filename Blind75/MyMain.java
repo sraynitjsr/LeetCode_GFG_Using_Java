@@ -5,5 +5,6 @@ public class MyMain {
         MyContainsDuplicate.containsDuplicate();
         ProductArray.productArray();
         LongestConsecutiveSequence.longestConsecutiveSequence();
+        CountSetBits.countSetBits();
     }
 }
