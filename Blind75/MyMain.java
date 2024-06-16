@@ -6,5 +6,6 @@ public class MyMain {
         ProductArray.productArray();
         LongestConsecutiveSequence.longestConsecutiveSequence();
         CountSetBits.countSetBits();
+        BestTimeToBuySellStock.bestTimeToBuySellStock();
     }
 }
