@@ -7,5 +7,6 @@ public class MyMain {
         LongestConsecutiveSequence.longestConsecutiveSequence();
         CountSetBits.countSetBits();
         BestTimeToBuySellStock.bestTimeToBuySellStock();
+        MyFirstBadVersion.myFirstBadVersion();
     }
 }
