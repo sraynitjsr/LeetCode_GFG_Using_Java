@@ -11,37 +11,52 @@ public class LinkedListCycleDetection {
         }
     }
     
-    public static boolean hasCycleFloyd(ListNode head) {
+    public static ListNode detectCycle(ListNode head) {
         if (head == null || head.next == null) {
-            return false;
+            return null;
         }
         
         ListNode slow = head;
-        ListNode fast = head.next;
+        ListNode fast = head;
+        boolean hasCycle = false;
         
-        while (slow != fast) {
-            if (fast == null || fast.next == null) {
-                return false;
-            }
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
+            
+            if (slow == fast) {
+                hasCycle = true;
+                break;
+            }
         }
         
-        return true;
+        if (!hasCycle) {
+            return null;
+        }
+        
+        ListNode ptr1 = head;
+        ListNode ptr2 = slow;
+        
+        while (ptr1 != ptr2) {
+            ptr1 = ptr1.next;
+            ptr2 = ptr2.next;
+        }
+        
+        return ptr1;
     }
     
-    public static boolean hasCycleHashing(ListNode head) {
+    public static ListNode detectCycleHashing(ListNode head) {
         HashSet<ListNode> visited = new HashSet<>();
         
         while (head != null) {
             if (visited.contains(head)) {
-                return true;
+                return head;
             }
             visited.add(head);
             head = head.next;
         }
         
-        return false;
+        return null;
     }
     
     public static void linkedListCycleDetection() {
@@ -51,10 +66,18 @@ public class LinkedListCycleDetection {
         head.next.next.next = new ListNode(-4);
         head.next.next.next.next = head.next;
         
-        boolean hasCycleFloyd = hasCycleFloyd(head);
-        System.out.println(hasCycleFloyd);
+        ListNode cycleNodeFloyd = detectCycle(head);
+        if (cycleNodeFloyd != null) {
+            System.out.println("Cycle detected using Floyd's Algorithm. Start of the cycle: " + cycleNodeFloyd.val);
+        } else {
+            System.out.println("No cycle detected using Floyd's Algorithm.");
+        }
         
-        boolean hasCycleHashing = hasCycleHashing(head);
-        System.out.println(hasCycleHashing);
+        ListNode cycleNodeHashing = detectCycleHashing(head);
+        if (cycleNodeHashing != null) {
+            System.out.println("Cycle detected using Hashing. Start of the cycle: " + cycleNodeHashing.val);
+        } else {
+            System.out.println("No cycle detected using Hashing.");
+        }
     }
 }
