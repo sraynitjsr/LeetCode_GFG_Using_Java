@@ -8,5 +8,6 @@ public class MyMain {
         CountSetBits.countSetBits();
         BestTimeToBuySellStock.bestTimeToBuySellStock();
         MyFirstBadVersion.myFirstBadVersion();
+        LinkedListCycleDetection.linkedListCycleDetection();
     }
 }
