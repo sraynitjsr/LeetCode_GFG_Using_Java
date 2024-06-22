@@ -9,5 +9,6 @@ public class MyMain {
         BestTimeToBuySellStock.bestTimeToBuySellStock();
         MyFirstBadVersion.myFirstBadVersion();
         LinkedListCycleDetection.linkedListCycleDetection();
+        SmallestWindowSubstring.smallestWindowSubstring();
     }
 }
