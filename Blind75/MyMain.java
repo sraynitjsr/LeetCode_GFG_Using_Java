@@ -10,5 +10,6 @@ public class MyMain {
         MyFirstBadVersion.myFirstBadVersion();
         LinkedListCycleDetection.linkedListCycleDetection();
         SmallestWindowSubstring.smallestWindowSubstring();
+        BinaryTreeBuilder.binaryTreeBuilder();
     }
 }
